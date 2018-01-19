@@ -1,12 +1,18 @@
 # Dog Breed Identification
-Using pretrained models in tensorflow and pytorch to identify dog breeds.
+Fine-tune pretrained models in tensorflow and pytorch to identify dog breeds, mostly for pedagogical purpose. 
 
 ## Purpose of the repo
 is to show how to 
 - load and fine-tune pretrained model in tensorflow and pytorch,
 - read large dataset using the **dataset** paradigm in tensorflow and pytorch,
-- do data augmentation on image data,
+- do data augmentation on image data in tensorflow and pytorch,
 - make a comparision between tensorflow and pytorch.
+
+## Prerequisites
+
+- tensorflow >= 1.3
+- pytorch >= 0.3
+- numpy, pandas, sklearn, Pillow
 
 ## Usage
 1. Download the data from kaggle: www.kaggle.com/c/dog-breed-identification 
@@ -26,7 +32,9 @@ python tf_version/main.py
 ```
 
 ## Results
-The average accuracies of both models reach 90% on val set after 10 training epochs.
+After 10 training epochs:
+- tensorflow model (using InceptionV3): mean accuracy reaches 90% on val set.
+- pytorch model (using Resnet50): mean accuracy reaches 87% on val set.
 
 ## Acknowledgments
 
